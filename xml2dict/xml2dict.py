@@ -45,8 +45,6 @@ class XML2Dict(object):
                     node_tree.pop(tag)
                     node_tree[tag] = [old]
                 node_tree[tag].append(tree)  # Add the new one.
-        if not node_tree:
-            node_tree = None
         return node_tree
 
     def _namespace_split(self, tag, value):
