@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 
-"""Unit tests for the xml2dict module."""
+"""
+Unit tests for the xml2dict module. Designed to be used with `nose` for
+running tests.
+
+    $ nosetests --with-coverage --cover-package=xml2dict
+"""
 
 import unittest
 import tempfile
@@ -155,7 +160,3 @@ class TestDict2XML(unittest.TestCase):
                                    '<b><![CDATA[1]]></b><b><![CDATA[2]]></b>'
                                    '</a>')
         self.assertEquals(dict2xml(my_dict), expected_xml)
-
-
-if __name__ == '__main__':
-    unittest.main()
