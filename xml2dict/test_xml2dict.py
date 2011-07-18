@@ -5,7 +5,8 @@
 import unittest
 import tempfile
 
-from xml2dict import object_dict, xml2dict, dict2xml, XML2Dict
+from __init__ import xml2dict, dict2xml
+from xml2dict import object_dict, XML2Dict
 
 
 class TestObjectDict(unittest.TestCase):
